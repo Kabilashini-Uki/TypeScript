@@ -1,0 +1,30 @@
+import { geometricObject } from "./geometric";
+
+export class circle extends geometricObject{
+   private radius:number;
+
+   constructor(radius:number, color:string, filled:boolean){
+           super(color, filled)
+           this.radius=radius
+   }
+
+   public getRadius():number{
+    return this.radius
+   }
+
+    public setRadius(radius:number):void{
+        this.radius=radius
+   }
+
+    public getArea(){
+        return Math.PI*Math.sqrt(this.radius);
+    }
+
+    public getPerimiter(){
+        return 2*Math.PI*Math.pow(this.radius,2);
+    }
+
+    public getDiameter():number{
+        return 2* this.radius
+    }
+}

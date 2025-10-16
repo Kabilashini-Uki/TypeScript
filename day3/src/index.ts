@@ -1,18 +1,24 @@
-import { bank } from "./day3/bank"
-import {peoples} from "./day3/peoples"
-import {HNB} from "./day3/HNB"
-import { BOC } from "./day3/BOC"
+import { circle } from "./Day3sub/circle";
+import { ractangle } from "./Day3sub/Ractangle";
+import { geometricObject } from "./Day3sub/practice";
 
-function functionForBanking(){
-    const bankobj = new bank()
-    const peoplesobj = new peoples()
-    const hnbobj = new HNB()
-    const bocobj = new BOC()
+function functionForGeometricobject(){
+const Ractangle= new ractangle(4,5, "blue", true)
+  const Circle = new circle(5, "red", true);
+  const GeometricObject=new geometricObject();
 
-    console.log(bankobj.interest)
-      console.log(peoplesobj.interest)
-        console.log(hnbobj.interest)
-          console.log(bocobj.interest)
+console.log(Ractangle.getArea());
+console.log(Ractangle.getPerimeter())
+
+console.log( Circle.getArea());
+console.log( Circle.getPerimiter());
+console.log(Circle.getDiameter())
+
+console.log(GeometricObject.getDataCreated())
 
 }
-functionForBanking();
+functionForGeometricobject()
+
+
+
+

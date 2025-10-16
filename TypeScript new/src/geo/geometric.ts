@@ -1,0 +1,35 @@
+export class geometricObject{
+    private color:string;
+    private filled:boolean;
+    private dataCreated:Date;
+
+    constructor(color:string= "white", filled:boolean=false){
+        this.color=color;
+        this.filled=filled;
+        this.dataCreated= new Date();
+    }
+
+    public getColor():string{
+        return this.color
+    }
+
+    public setColor(color:string):void{
+         this.color=color
+    }
+     public isfilled():boolean{
+        return this.filled
+     }
+     
+     public setFilled(filled:boolean){
+        this.filled=filled
+     }
+
+     public getDataCreated():Date{
+        return this.dataCreated;
+     }
+
+     public toString(){
+        return "Color: "+this.color+" Filled: "+this.filled+" Date: "+this.dataCreated
+     }
+   
+}
